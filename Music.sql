@@ -29,7 +29,7 @@ CREATE table "Music".Album_Singer (
 CREATE table "Music".Tracks (
 	track_id SERIAL PRIMARY KEY,
 	track_name VARCHAR(80) NOT NULL,
-	track_length INTEGER,
+	track_length DECIMAL(3, 1),
 	album_id INTEGER REFERENCES "Music".Albums(album_id)
 );
 
