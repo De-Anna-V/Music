@@ -17,7 +17,7 @@ CREATE table "Music".Genre_Singer (
 CREATE table "Music".Albums (
 	album_id SERIAL PRIMARY KEY,
 	album_name VARCHAR(80) NOT NULL,
-	release_year INTEGER
+	release_year DATE
 );
 
 CREATE table "Music".Album_Singer (
@@ -36,7 +36,7 @@ CREATE table "Music".Tracks (
 CREATE table "Music".Collections (
 	collection_id SERIAL PRIMARY KEY,
 	collection_name VARCHAR(80) NOT NULL,
-	release_year INTEGER
+	release_year DATE
 );
 	
 CREATE table "Music".Collection_Track (
